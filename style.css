@@ -1,0 +1,140 @@
+/* .light {
+  color: black;
+  background-color: white;
+}
+
+.dark {
+  color: white;
+  background-color: black;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 25px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #054af9;
+}
+
+.err1 {
+  text-align: center;
+  color: red;
+  visibility: hidden;
+}
+
+ul {
+  list-style: none;
+}
+.err2 {
+  text-align: center;
+  color: red;
+  visibility: hidden;
+}
+.err3 {
+  text-align: center;
+  color: red;
+  visibility: hidden;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+}
+
+.form {
+  width: 720px;
+  height: auto;
+  padding: 55px 70px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.form h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+  color: black;
+  font-weight: 700;
+}
+
+/* Input Area */
+.input-box {
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 15px 45px 10px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  outline: none;
+  font-size: 15px;
+  color: black;
+}
+
+.input-box::placeholder {
+  color: black;
+}
+
+/* Login Button */
+.btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(
+    to right,
+    rgba(125, 170, 255, 0.95),
+    rgba(103, 156, 255, 0.8)
+  );
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(79, 120, 255, 0.3);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  background-color: #054af9;
+  transition: 0.3s;
+}
