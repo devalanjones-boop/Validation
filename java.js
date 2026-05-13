@@ -53,3 +53,18 @@ else {
 }
 })
 
+
+let popup = document.getElementById('popup')
+btn.addEventListener("click", () => {
+        event.preventDefault()
+
+        let testResult1 = usernameRegX.test(username.value)
+        let testResult2= emailRegX.test(email.value)
+        let testResult3 = passwordRegX.test(password.value)
+    
+    if( testResult1,testResult2,testResult3){
+          popup.style.display = "block"; 
+        setTimeout(() => popup.style.display = "none", 2000);
+    }
+
+})

@@ -44,8 +44,14 @@ ul {
   color: red;
   visibility: hidden;
 }
+.login {
+  text-align: center;
+  color: greenyellow;
+  visibility: hidden;
+}
 
 .box {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,3 +124,15 @@ ul {
   background-color: #054af9;
   transition: 0.3s;
 }
+
+ #popup {
+      display: none; 
+      position: fixed; 
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background: #4CAF50; 
+      color: white; 
+      border-radius: 8px;
+      font-size: 18px;
+    }

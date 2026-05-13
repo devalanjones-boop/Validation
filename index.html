@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+<link rel="manifest" href="./icon/site.webmanifest">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -23,17 +27,25 @@
       <div class="form">
         <h1>SIGN UP</h1>
         <ul>
-          <li><input type="text" class="input-box" id="username" placeholder="Username" /></li>
-          <li><input type="text" class="input-box" id="email" placeholder="Email" /></li>
-          <li><input type="text" class="input-box" id="password" placeholder="Password" /></li>
+          <li>
+            <input type="text" class="input-box" id="username" placeholder="Username" />
+           <p class="err1" id="err1">Invalid Username</p>
+          </li>
+          <li>
+            <input type="text" class="input-box" id="email" placeholder="Email" />
+            <p class="err2" id="err2">Invalid Email</p>
+          </li>
+          <li><input type="text" class="input-box" id="password" placeholder="Password" />
+            <p class="err3" id="err3">Invalid Password</p>
+          </li>
         </ul>
 
-        <p class="err1" id="err1">Invalid Username</p>
-        <p class="err2" id="err2">Invalid Email</p>
-        <p class="err3" id="err3">Invalid Password</p>
+       
         <button class="btn" id="btn">Login</button>
       </div>
     </div>
+
+    <div class="popup" id="popup">Login Successful</div>
 
     <script src="java.js"></script>
   </body>
